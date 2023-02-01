@@ -22,7 +22,4 @@ element = images.map(option => {
   imageEl.alt = option.alt;
   console.log (imageEl);
   return (document.querySelector("li")).append(imageEl);
-  })
-
-
-
+  });

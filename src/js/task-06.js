@@ -20,6 +20,4 @@ function addColorInput(event) {
  } else {
     inputEl.classList.add('valid');
 }
-} 
-
-
+};

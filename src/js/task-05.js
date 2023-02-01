@@ -9,4 +9,4 @@ let inputEl = document.querySelector("input");
     } else {
     nameOutputEl.textContent = event.currentTarget.value;
     }
-    } 
+    };

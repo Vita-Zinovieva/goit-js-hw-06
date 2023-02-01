@@ -29,6 +29,4 @@ createBtn.addEventListener('click', () => {
 
 destroyBtn.addEventListener('click', () => {
 	boxRef.innerHTML = ' ';
-});
-
-  
+});  

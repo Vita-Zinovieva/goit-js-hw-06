@@ -1,23 +1,22 @@
 
 const inputEl = document.querySelector('input');
-const setDataLength = document.querySelector('input').dataset.length;
-//console.log(setDataLength);
+const setDataLength = document.querySelector('input').dataset.length*1;
+console.log(setDataLength);
 
 inputEl.addEventListener('blur', addColorInput);
 
 function addColorInput(event) {
-    //console.log(event.currentTarget.value);
+    console.log(event.currentTarget.value);
     let eventEl = event.currentTarget.value.length;
-   // console.log(eventEl);
- if(eventEl === setDataLength) {
-    inputEl.classList.remove('invalid');
-    inputEl.classList.add('valid');
+    console.log(eventEl);
     
- } if(eventEl === 0) {
-    inputEl.classList.remove('valid');
-    inputEl.classList.add('invalid');
-  
+   inputEl.classList.add('invalid');
+   console.log(eventEl === setDataLength);
+ if(eventEl === setDataLength) {
+
+   inputEl.classList.replace('invalid','valid')
+        
  } else {
-    inputEl.classList.add('valid');
-}
+   inputEl.classList.replace('valid','invalid')
+     } 
 };
